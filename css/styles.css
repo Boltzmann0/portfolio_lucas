@@ -7,25 +7,100 @@ body {
     text-align: center;
 }
 
+/* Menu de navegação fixo */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+/* Estilização das seções */
 header {
     background-color: #1f1f1f;
-    padding: 20px;
+    padding: 60px 20px;
+    margin-top: 50px;
 }
 
 .content {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 20px;
     background-color: #222;
     border-radius: 10px;
 }
 
-h1, h2 {
-    color: #00bcd4;
+/* Estilização das habilidades */
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #00bcd4;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Links sociais */
+.social-links a {
+    text-decoration: none;
+    color: white;
+    background: #00bcd4;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
 }
 
 footer {
     margin-top: 20px;
     padding: 10px;
     background-color: #1f1f1f;
+}
+
+/* Animação de fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animação de digitação */
+.typing::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
 }

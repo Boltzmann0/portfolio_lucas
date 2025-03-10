@@ -8,18 +8,38 @@
 </head>
 <body>
 
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <h1>Lucas Lopes</h1>
+        <h1 class="typing">Lucas Lopes</h1>
         <p>Explorando minha jornada na tecnologia</p>
     </header>
 
-    <section class="content">
+    <section id="sobre" class="content fade-in">
         <h2>Sobre Mim</h2>
         <p>Sou formado em Engenharia da Computação - UNIVESP, Matemática - UNIUBE e pós-graduado em Big Data e Data Science - PUC MINAS.</p>
-        
-        <h2>Minha Jornada</h2>
-        <p>Ao longo dos anos, trabalhei com desenvolvimento, análise de dados e machine learning...</p>
+    </section>
 
+    <!-- Seção de Habilidades -->
+    <section id="habilidades" class="content fade-in">
+        <h2>Habilidades</h2>
+        <div class="skills">
+            <div class="skill">💻 Desenvolvimento Web</div>
+            <div class="skill">📊 Data Science</div>
+            <div class="skill">🤖 Machine Learning</div>
+            <div class="skill">🎮 Jogos 2D</div>
+        </div>
+    </section>
+
+    <section id="projetos" class="content fade-in">
         <h2>Projetos</h2>
         <ul>
             <li>📊 Análise de dados com Python</li>
@@ -28,9 +48,20 @@
         </ul>
     </section>
 
+    <!-- Seção de Contato -->
+    <section id="contato" class="content fade-in">
+        <h2>Contato</h2>
+        <p>Me encontre nas redes sociais:</p>
+        <div class="social-links">
+            <a href="https://github.com/Boltzmann0" target="_blank">🐙 GitHub</a>
+            <a href="mailto:lu.silva@fiemg.com.br">📧 Email</a>
+        </div>
+    </section>
+
     <footer>
-        <p>Contato: <a href="mailto:seuemail@email.com">seuemail@email.com</a></p>
+        <p>© 2024 Lucas Lopes - Todos os direitos reservados</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
