@@ -63,6 +63,9 @@ html, body {
     position: relative;
     width: 100%;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .timeline-content {
@@ -70,18 +73,20 @@ html, body {
     background: #222;
     border-radius: 10px;
     color: white;
-    width: 45%;
+    width: 40%;
     position: relative;
 }
 
 .timeline-content.left {
     text-align: right;
-    left: 5%;
+    left: 0;
+    margin-left: -10px; /* Ajuste fino para evitar sobreposição */
 }
 
 .timeline-content.right {
     text-align: left;
     left: 50%;
+    margin-left: 10px; /* Ajuste fino para alinhamento perfeito */
 }
 
 .timeline-content h3 {
