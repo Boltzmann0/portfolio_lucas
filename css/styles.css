@@ -111,3 +111,76 @@ body {
 @keyframes blink {
     50% { opacity: 0; }
 }
+
+/* Linha do tempo */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.timeline-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.timeline-content {
+    padding: 15px;
+    background: #222;
+    border-radius: 10px;
+    color: white;
+    width: 45%;
+    position: relative;
+}
+
+.timeline-content.left {
+    text-align: right;
+    left: 5%;
+}
+
+.timeline-content.right {
+    text-align: left;
+    left: 50%;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #00bcd4;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.date {
+    font-size: 0.8em;
+    color: #ddd;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Linha vertical */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    background: #00bcd4;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Bolinhas na linha do tempo */
+.timeline-item::before {
+    content: "⚫";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    font-size: 1.5em;
+    color: #00bcd4;
+}
