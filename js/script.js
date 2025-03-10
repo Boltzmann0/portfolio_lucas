@@ -41,3 +41,18 @@ window.addEventListener("scroll", function () {
         }
     });
 });
+
+// Efeito de fade-in ao rolar a página
+window.addEventListener("scroll", function () {
+    const elements = document.querySelectorAll(".fade-in, .project-card");
+
+    elements.forEach(element => {
+        const position = element.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (position < screenHeight - 100) {
+            element.classList.add("visible");
+        }
+    });
+});
+
