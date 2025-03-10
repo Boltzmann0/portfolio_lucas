@@ -16,8 +16,6 @@ html, body {
 }
 
 
-
-
 /* Menu de navegação fixo */
 .navbar {
     position: sticky;
@@ -138,3 +136,30 @@ html, body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Seção de habilidades */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    font-size: 1em;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background: #00bcd4;
+    color: black;
+}
+

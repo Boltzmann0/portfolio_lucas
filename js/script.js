@@ -13,4 +13,21 @@ window.addEventListener("scroll", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const title = document.querySelector(".typing");
+    const text = "Lucas Lopes";
+    let index = 0;
+
+    function typeEffect() {
+        if (index < text.length) {
+            title.textContent = text.slice(0, index + 1);
+            index++;
+            setTimeout(typeEffect, 150);
+        }
+    }
+
+    typeEffect();
+});
+
+
 
