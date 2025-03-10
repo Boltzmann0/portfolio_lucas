@@ -1,6 +1,3 @@
-let player = document.getElementById("player");
-let position = 50;
-let score = 0;
 
 // Efeito de fade-in ao rolar a página
 window.addEventListener("scroll", function () {
